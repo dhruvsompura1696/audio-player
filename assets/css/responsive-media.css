@@ -1,0 +1,151 @@
+/*======================================================================================*/
+/*=================[    |!|!|!|!| CSS ADDED BY PUROHIT A |!|!|!|!|    ]=================*/
+/*======================================================================================*/
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+/* ============================================ */
+/* !!!           max width 1199px           !!! */
+/* ============================================ */
+@media (max-width:1199.98px) {
+}
+/* ============================================ */
+/* !!!           max width 991px            !!! */
+/* ============================================ */
+@media (max-width:991.98px) {
+    /* !!!!! Header !!!!! */
+    nav .navbar-collapse {
+        width: 100%;
+        padding: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        bottom: auto;
+        border: 0;
+        background: var(--bs-white);
+        z-index: 9;
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        transform: translateY(-100%);
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+        overflow: auto;
+        border-bottom: 18px solid var(--bs-primary);
+    }
+    .navbar-collapse.show {
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    .navbar-nav {
+        padding: var(--bs-nav-link-padding-x);
+    }
+    .navbar .navbar-nav>li {
+        padding: 0;
+    }
+    .navbar .navbar-nav .nav-item a {
+        position: relative;
+        font-family: "proxima-soft", sans-serif;
+        font-size: 24px;
+        line-height: 27px;
+        padding: 30px 22px 30px 37px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+    }
+    .navbar .navbar-nav.responsive-menu .nav-item:last-child a {
+        border: 0;
+    }
+    /* !!!! SUB MENU RESPONSIVE !!!! */
+    .navbar .navbar-nav.responsive-menu .nav-item {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        border-bottom: 1px solid rgb(112 112 112 / 35%);
+    }
+    .navbar .navbar-nav.responsive-menu .nav-item a::after {
+        display: none;
+    }
+    .navbar .navbar-nav.responsive-menu .nav-item.submenu {
+        position: relative;
+    }
+    .navbar .navbar-nav.responsive-menu .submenu>a::before {
+        content: '';
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16.484' height='9.242' viewBox='0 0 16.484 9.242'%3E%3Cpath d='M0,0,6.828,6.828,13.655,0' transform='translate(1.414 1.414)' fill='none' stroke='%236c42ec' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/svg%3E%0A");
+        padding: 1px;
+        position: absolute;
+        right: -22px;
+        top: auto;
+        z-index: 9999;
+        width: 20px;
+        height: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 15px;
+        pointer-events: none;
+        margin-top: 5px;
+    }
+    .navbar .navbar-nav.responsive-menu .menu-open.submenu a::before {
+        transform: rotate(180deg);
+    }
+    .navbar .navbar-nav.responsive-menu .submenu_menu {
+        position: relative;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+        border: 0;
+        transform: none;
+        background: var(--bs-primary);
+        padding: 40px 37px;
+        width: 100%;
+        border-radius: 0;
+        z-index: 99;
+        -webkit-transition: opacity .4s ease-in-out;
+        transition: opacity .4s ease-in-out;
+    }
+    .submenu_menu::before {
+        display: none;
+    }
+    .navbar .navbar-nav.responsive-menu .submenu_menu li {
+        margin: 0;
+    }
+    .navbar .navbar-nav.responsive-menu .submenu_menu li a {
+        display: block;
+        color: var(--bs-white);
+        border-color: var(--bs-white);
+        padding: 30px 20px;
+        font-size: 21px;
+        border-bottom: 1px solid rgb(255 255 255 / 20%);
+    }
+
+}
+/* ============================================ */
+/* !!!           max width 767px            !!! */
+/* ============================================ */
+@media (max-width:767.98px) {}
+/* ============================================
+/* !!!           max width 575px            !!! */
+/* ============================================ */
+@media (max-width:575.98px) {}
+/* ============================================ */
+/* !!!           max width 400px            !!! */
+/* ============================================ */
+@media (max-width:385px) {}
+/*------------------------------------------------------------------- */
+/*   !! MIN WIDTH 240 TO MAX WIDTH 320 TO ORIENTATION:LANDSCAPE !!    */
+/*------------------------------------------------------------------- */
+@media only screen and (max-height: 414px) and (orientation:portrait) {}
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation:landscape) {}
